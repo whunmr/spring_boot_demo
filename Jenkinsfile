@@ -1,12 +1,5 @@
 pipeline {
-    // Make sure that the tools we need are installed and on the path.
-    tools {
-        maven "Maven 3.3.9"
-        jdk "Oracle JDK 8u40"
-    }
-
     agent any
-
 
     // The order that sections are specified doesn't matter - this will still be run
     // after the stages, even though it's specified before the stages.
