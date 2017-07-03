@@ -8,12 +8,10 @@ pipeline {
         }
     }
     
-    docker.image('rowanto/docker-java8-mvn-nodejs-npm').inside {
-        stages {
-            stage("build") {
-                steps {
-                    sh 'mvn clean test'
-                }
+    stages {
+        stage("build") {
+            steps {
+                sh 'mvn clean test'
             }
         }
     }
